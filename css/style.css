@@ -58,6 +58,36 @@ a {
     color: var(--main-bg-color)
 }
 
+/****** Headers ***********/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; /* Pour que le logo s'affiche plus bas que les liens de la balise nav */
+    margin-top: -8px; /* Pour coller le header de la page en haut afin d'afficher la barre bleue de navigation */
+    height: 50px;
+}
+  
+.logo {
+    width: 61.09px;
+    height: 19px;
+}
+  
+.nav-header {
+    display: flex;
+    gap: 68px;
+    height: 100%;
+}
+  
+.lien-nav {
+    display: flex;
+    align-items: center; /* Pour afficher le contenu des liens au centre de leur div et ainsi être plus haut que le logo */
+}
+  
+.lien-nav:hover {
+    border-top: solid 2px var(--main-color);
+    color: var(--main-color);
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
