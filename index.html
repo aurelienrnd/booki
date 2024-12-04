@@ -32,26 +32,20 @@
         
                 <fieldset class="filter"><!-- Est-ce une bonne option d'utiliser un <fieldset> ? -->
                     <legend class="sr-only">Filtres</legend><!-- Ajout d'un <legend> invisible avec la classe "sr-only" pour améliorer l'accessibilité -->
-                    <ul class="filter-list"><!-- Utiliser une liste est-elle une bonne option ? -->
-                        <li>
-                            <!-- Pour réafficher le label invisible.
-                            La police sur Figma est différente des autres, on retrouve parfois la même dans d'autres sections. Est-ce judicieux de créer une nouvelle classe que je pourrais réutiliser ? -->
-                           <span class="title-area">Filtres</span>
-                        </li>
-                        <li>
-                           <button class="btn-filter"><i class="fa-solid fa-money-bill-wave"></i>Economique</button>
-                        </li>
-                        <li>
-                            <button class="btn-filter"><i class="fa-solid fa-person"></i>Famillial</button>
-                        </li>
-                        <li>
-                            <button class="btn-filter"><i class="fa-solid fa-heart"></i>Romantique</button>
-                        </li>
-                        <li>
-                            <button class="btn-filter"><i class="fa-sharp fa-solid fa-fire"></i>Nos pépites</button>
-                        </li>
-                    </ul>
-                </fieldset>
+                        <!-- Pour réafficher le label invisible.
+                        La police sur Figma est différente des autres, on retrouve parfois la même dans d'autres sections. Est-ce judicieux de créer une nouvelle classe que je pourrais réutiliser ? -->
+                        <p class="title-area">Filtres</p>
+                       <div class="filters-container">
+                            <div class="filters-row">
+                                <button class="btn-filter"><i class="fa-solid fa-money-bill-wave"></i>Economique</button>
+                                <button class="btn-filter"><i class="fa-solid fa-person"></i>Famillial</button>
+                            </div>
+                            <div class="filters-row">
+                                <button class="btn-filter"><i class="fa-solid fa-heart"></i>Romantique</button>
+                                <button class="btn-filter"><i class="fa-sharp fa-solid fa-fire"></i>Nos pépites</button>
+                            </div>
+                        </div>
+                </fieldset> 
         
                 <aside class="info-search-and-filter">
                     <i class="fa-solid fa-info" ></i>

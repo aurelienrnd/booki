@@ -97,19 +97,27 @@ a {
 /*filter*/
 .filter {
     border: none; /* Pour effacer la bordure présente par défaut sur les balises <fieldset> */
-    padding: 0; /* La balise <fieldset> possède un padding par défaut */
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 16px;
 }
   
 .title-area { /* Création d'une nouvelle classe que je peux réutiliser dans plusieurs sections */
     font-size: 18px;
     font-weight: 700;
+    margin: 0;
 }
   
-.filter-list {
-    list-style: none;
-    padding: 0; /* La balise <ul> possède un padding pour afficher les puces */
+.filters-container {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.filters-row{
+    display: flex;
     gap: 16px;
 }
   
