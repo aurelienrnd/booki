@@ -58,6 +58,96 @@ a {
     color: var(--main-bg-color)
 }
 
+/****** search-and-filter ***********/
+/*search*/
+.search-bar{
+    display: flex;
+}
+  
+.fa-solid.fa-location-dot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    Width: 50px;
+    Height: 50px;
+    border-radius: 10px 0px 0px 10px;
+    color: #000000;
+    background-color: #F2F2F2;
+}
+  
+.input-search{
+    border: #F2F2F2 1px solid;
+}
+  
+.button-search{
+    background-color: var(--main-color);
+    color: #ffffff;
+    border-radius: 0px 10px 10px 0px;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 0px 20px;
+}
+  
+.fa-solid.fa-magnifying-glass{
+    color: #ffffff;
+    display: none; /* Pour masquer la loupe en mode desktop */
+}
+
+/*filter*/
+.filter {
+    border: none; /* Pour effacer la bordure présente par défaut sur les balises <fieldset> */
+    padding: 0; /* La balise <fieldset> possède un padding par défaut */
+}
+  
+.title-area { /* Création d'une nouvelle classe que je peux réutiliser dans plusieurs sections */
+    font-size: 18px;
+    font-weight: 700;
+}
+  
+.filter-list {
+    list-style: none;
+    padding: 0; /* La balise <ul> possède un padding pour afficher les puces */
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+  
+.btn-filter {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 25px;
+    border: 2px solid #D9D9D9;
+    background-color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    Height: 45px;
+    padding: 0px 10px
+}
+  
+.btn-filter:hover{
+    background-color: var(--filter-bg-color);
+}
+  
+/*info-search-and-filter*/
+.info-search-and-filter{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+  
+.fa-solid.fa-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    font-size: 10px;
+    border: #D9D9D9 1px solid;
+    border-radius: 200px;
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
