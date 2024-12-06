@@ -16,6 +16,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0;
 }
 
 .main-container {
@@ -63,7 +64,6 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: flex-end; /* Pour que le logo s'affiche plus bas que les liens de la balise nav */
-    margin-top: -8px; /* Pour coller le header de la page en haut afin d'afficher la barre bleue de navigation */
     height: 50px;
 }
   
