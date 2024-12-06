@@ -121,6 +121,37 @@ a {
     margin-bottom: 5px;
 }
 
+/****** Footer ***********/
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--main-bg-color);
+}
+
+footer section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 15px;
+    padding: 20px;
+}
+
+footer section h2 {
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
