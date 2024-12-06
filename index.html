@@ -18,39 +18,39 @@
     <div class="main-container">
         <header></header>
         <main>
-            <section class="search-and-filter">
-                <div class="header-search-and-filter"><!-- Peut-il être judicieux de réutiliser un header ? -->
-                    <h1 class="section-title">Trouvez votre hébergement pour des vacances de rêve</h1><!-- Réutilisation de la classe .section-titre -->
-                    <p>En plein centre-ville ou en pleine nature</p>
-                </div>
+            <section>              
+                <h1 class="section-title">Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre-ville ou en pleine nature</p>
         
                 <form class="search-bar">
-                    <label for="where" aria-label="Rechercher"><i class="fa-solid fa-location-dot"></i></label><!-- aria-label est-il nécessaire ? -->
-                    <input type=text placeholder="Marseille, France" id="where" class="input-search">
-                    <button class="button-search" type="submit"><span>Rechercher</span><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <label for="where">
+                        <i class="fa-solid fa-location-dot" aria-hidden="true">
+                        <!-- aria-hidden="true" pour l'exclure des lecteurs d'écran --></i>
+                    </label>
+                    <input type=text placeholder="Rechercher" id="where" class="input-search" aria-label="Rechercher" value="Marseille, France">
+                    <!-- aria-label="Rechercher" pour inclure un label dans les lecteurs d'écran -->
+                    <button class="button-search" type="submit"><span class="texte-btn-search">Rechercher</span><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
         
-                <fieldset class="filter"><!-- Est-ce une bonne option d'utiliser un <fieldset> ? -->
-                    <legend class="sr-only">Filtres</legend><!-- Ajout d'un <legend> invisible avec la classe "sr-only" pour améliorer l'accessibilité -->
-                        <!-- Pour réafficher le label invisible.
-                        La police sur Figma est différente des autres, on retrouve parfois la même dans d'autres sections. Est-ce judicieux de créer une nouvelle classe que je pourrais réutiliser ? -->
-                        <p class="title-area">Filtres</p>
-                       <div class="filters-container">
-                            <div class="filters-row">
-                                <button class="btn-filter"><i class="fa-solid fa-money-bill-wave"></i>Economique</button>
-                                <button class="btn-filter"><i class="fa-solid fa-person"></i>Famillial</button>
-                            </div>
-                            <div class="filters-row">
-                                <button class="btn-filter"><i class="fa-solid fa-heart"></i>Romantique</button>
-                                <button class="btn-filter"><i class="fa-sharp fa-solid fa-fire"></i>Nos pépites</button>
-                            </div>
+                <div class="filter">
+                    <span class="title-area">Filtres</span>
+                    <div class="filters-container">
+                        <div class="filters-row">
+                            <!-- Note de synthèse:  Privilégier l’utilisation des classes CSS pour cibler un élément -->
+                            <button class="btn-filter"><i class="fa-solid fa-money-bill-wave"></i>Economique</button>
+                            <button class="btn-filter"><i class="fa-solid fa-person"></i>Famillial</button>
                         </div>
-                </fieldset> 
+                        <div class="filters-row">
+                            <button class="btn-filter"><i class="fa-solid fa-heart"></i>Romantique</button>
+                            <button class="btn-filter"><i class="fa-sharp fa-solid fa-fire"></i>Nos pépites</button>
+                        </div>
+                    </div>
+                </div> 
         
-                <aside class="info-search-and-filter">
+                <div class="info-search-and-filter">
                     <i class="fa-solid fa-info" ></i>
-                    <p>Plus de 5000 logements sont disponibles dans cette ville</p>
-                </aside>
+                    <span>Plus de 5000 logements sont disponibles dans cette ville</span>
+                </div>
             </section>
             <div class="hebergements-and-populaires">
                 <section class="hebergements">

@@ -58,10 +58,17 @@ a {
     color: var(--main-bg-color)
 }
 
+.title-area { /* Création d'une nouvelle classe que je peux réutiliser dans plusieurs sections */
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+}
+
 /****** search-and-filter ***********/
 /*search*/
 .search-bar{
     display: flex;
+    margin: 35px 0px;
 }
   
 .fa-solid.fa-location-dot {
@@ -77,6 +84,9 @@ a {
   
 .input-search{
     border: #F2F2F2 1px solid;
+    padding: 0px 24px;
+    font-size: 18px;
+    font-weight: 700;
 }
   
 .button-search{
@@ -86,7 +96,7 @@ a {
     border: none;
     font-size: 18px;
     font-weight: 700;
-    padding: 0px 20px;
+    padding: 0px 16px;
 }
   
 .fa-solid.fa-magnifying-glass{
@@ -96,18 +106,11 @@ a {
 
 /*filter*/
 .filter {
-    border: none; /* Pour effacer la bordure présente par défaut sur les balises <fieldset> */
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap: 16px;
-    margin-top: 16px;
-}
-  
-.title-area { /* Création d'une nouvelle classe que je peux réutiliser dans plusieurs sections */
-    font-size: 18px;
-    font-weight: 700;
-    margin: 0;
+    margin-bottom: 35px;
 }
   
 .filters-container {
@@ -142,7 +145,7 @@ a {
 .info-search-and-filter{
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 2.5px;
 }
   
 .fa-solid.fa-info{
