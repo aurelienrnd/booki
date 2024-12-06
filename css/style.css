@@ -16,7 +16,7 @@
 body {
     display: flex;
     justify-content: center;
-    margin: 0;
+    margin: 0; /* Pour afficher la bordure top des valise <a> dans le <nav> tout en haut de la page */
 }
 
 .main-container {
@@ -59,7 +59,8 @@ a {
     color: var(--main-bg-color)
 }
 
-.title-area { /* Création d'une nouvelle classe que je peux réutiliser dans plusieurs sections */
+/* Création d'une nouvelle classe que je peux réutiliser dans plusieurs sections */
+.title-area {
     font-size: 18px;
     font-weight: 700;
     margin: 0;
@@ -71,6 +72,7 @@ a {
     justify-content: space-between;
     align-items: flex-end; /* Pour que le logo s'affiche plus bas que les liens de la balise nav */
     height: 50px;
+    margin-bottom: 60px;
 }
   
 .logo {
@@ -176,6 +178,7 @@ a {
     display: flex;
     align-items: center;
     gap: 2.5px;
+    margin-bottom: 35px;
 }
   
 .fa-solid.fa-info{
@@ -193,6 +196,7 @@ a {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 35px;
 }
 
 .hebergements-and-populaires section {
@@ -216,7 +220,9 @@ a {
 }
 
 .hebergements-cards .card{
-    flex-basis: calc(33.33% - 22px); /* Je soustrais à chaque carte le gap de 33px, qui se répète 2 fois (33 * 2 = 66 ; 66 / 3 = 22px). */
+    /* 33.33% X 3 = 99.99% Le navigateur ne prend pas corectement en charge le gap de 33px du conteneur .hebergements-cards
+    Je dois donc le soustraire manuellement, pour chaque carte le gap de 33px se répète 2 fois (33 * 2 = 66 ; 66 / 3 = 22px). */
+    flex-basis: calc(33.33% - 22px); 
     box-sizing: border-box;
 }
 
@@ -297,12 +303,13 @@ a {
 
 .activites-cards {
     display: flex;
-    gap: 30px;
     margin-top: 30px;
-
+    gap: 30px
 }
 
 .activites-cards .card{
+    flex-basis: 25%;
+    box-sizing: border-box;
     padding: 0px 0px 5px 0px;
 }
 
@@ -316,34 +323,12 @@ a {
     padding: 0px 19px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /****** Footer ***********/
 footer{
     display: flex;
     justify-content: space-between;
     background-color: var(--main-bg-color);
+    margin-top: 35px;
 }
 
 footer section {
@@ -354,24 +339,6 @@ footer section {
     gap: 15px;
     padding: 20px;
 }
-
-footer section h2 {
-    margin: 0;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
