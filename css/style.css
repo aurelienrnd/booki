@@ -16,7 +16,7 @@
 body {
     display: flex;
     justify-content: center;
-    margin: 0;
+    margin: 0; /* Pour afficher la bordure top des valise <a> dans le <nav> tout en haut de la page */
 }
 
 .main-container {
@@ -61,32 +61,36 @@ a {
 
 /****** Headers ***********/
 .header {
+    border: black solid 1px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end; /* Pour que le logo s'affiche plus bas que les liens de la balise nav */
-    height: 50px;
+    margin-bottom: 30px;
 }
   
 .logo {
+    border: red solid 1px;
     width: 61.09px;
     height: 19px;
+    padding: 30px;
 }
   
 .nav-header {
+    border: red solid 1px;
     display: flex;
-    gap: 68px;
-    height: 100%;
+    align-items: start;
+    gap: 68px
 }
   
 .lien-nav {
-    display: flex;
-    align-items: center; /* Pour afficher le contenu des liens au centre de leur div et ainsi être plus haut que le logo */
+    border: blue solid 1px;
+    padding-top: 16px;
 }
   
 .lien-nav:hover {
     border-top: solid 2px var(--main-color);
     color: var(--main-color);
 }
+
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
