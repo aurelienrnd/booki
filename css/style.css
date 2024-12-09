@@ -198,6 +198,11 @@ a {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    /****** Activités ***********/
+    .activites-cards .card img{
+            height: 200px;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
@@ -205,5 +210,10 @@ a {
     /****** General ***********/
     .main-container {
         padding: 0;
+    }
+
+    /****** Activités ***********/
+    .activites-cards {
+            flex-direction: column;
     }
 }
