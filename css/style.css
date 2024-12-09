@@ -16,11 +16,13 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0; /* Pour afficher la bordure top des valise <a> dans le <nav> tout en haut de la page */
 }
 
 .main-container {
     width: 100%;
     max-width: 1440px;
+    min-width: 320px; /* Largeur minimum en mode mobil */
     padding: 0 50px;
     box-sizing: border-box;
 }
@@ -56,6 +58,13 @@ a {
 
 .neutral-star {
     color: var(--main-bg-color)
+}
+
+/* Création d'une nouvelle classe que je peux réutiliser dans plusieurs sections */
+.title-area {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
 }
 
 /****** Hebergements And Populaires ***********/
@@ -163,5 +172,8 @@ a {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    /****** General ***********/
+    .main-container {
+        padding: 0;
+    }
 }
