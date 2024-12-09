@@ -166,7 +166,7 @@ a {
     gap: 15px;
 }
   
-.filter button {
+.filter-button {
     display: flex;
     align-items: center; /* Pour centrer le texte et le logo*/
     gap: 10px;
@@ -178,7 +178,7 @@ a {
     font-weight: 700;
 }
   
-.filter button:hover{
+.filter-button:hover{
     background-color: var(--filter-bg-color);
 }
   
@@ -461,7 +461,7 @@ a {
         gap: 10px;
     }
 
-    .filter button {
+    .filter-button {
         width: 100%;
         font-size: 14px;
         padding: 14px 0px;
