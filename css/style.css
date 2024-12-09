@@ -67,6 +67,109 @@ a {
     margin: 0;
 }
 
+/****** search-and-filter ***********/
+.search-filter {
+    border: black solid 1px;
+}
+
+/*search*/
+.search-bar{
+    border: red solid 1px;
+    display: flex;
+    margin: 35px 0px;
+}
+  
+.fa-solid.fa-location-dot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    Width: 50px;
+    Height: 50px;
+    /*Est'il plus judicieux d'utiliser un padding; plustot que flex-box pour centrer un elements ?*/
+    border-radius: 10px 0px 0px 10px;
+    color: #000000;
+    background-color: #F2F2F2;
+}
+  
+.input-search{
+    border: #F2F2F2 1px solid;
+    padding: 0px 24px;
+    font-size: 18px;
+    font-weight: 700;
+}
+  
+.button-search{
+    background-color: var(--main-color);
+    color: #ffffff;
+    border-radius: 0px 10px 10px 0px;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 0px 16px;
+}
+  
+.fa-solid.fa-magnifying-glass{
+    color: #ffffff;
+    display: none; /* Pour masquer la loupe en mode desktop */
+}
+
+/*filter*/
+.filter {
+    border: red solid 1px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+  
+.filters-container {
+    border: green solid 1px;
+    display: flex;
+    gap: 15px;
+}
+
+.filters-row{
+    border: blue solid 1px;
+    display: flex;
+    gap: 15px;
+}
+  
+.filter button {
+    display: flex;
+    align-items: center; /* Pour centrer le texte et le logo*/
+    gap: 10px;
+    padding: 15px 19px;
+    border-radius: 25px;
+    border: 2px solid #D9D9D9;
+    background-color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+}
+  
+.filter button:hover{
+    background-color: var(--filter-bg-color);
+}
+  
+/*info-search-and-filter*/
+.info-search-and-filter {
+    border: red solid 1px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 35px 0px;
+}
+  
+.fa-solid.fa-info{
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*Est'il plus judicieux d'utiliser un padding:7px 10px; plustot que flex-box ?*/
+    font-size: 10px;
+    border: #D9D9D9 1px solid;
+    border-radius: 200px;
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
