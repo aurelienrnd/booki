@@ -221,6 +221,43 @@ a {
     width: 65%;
 }
 
+.hebergements-cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 33px;
+    margin-top: 33px;
+    margin-bottom: 33px;
+}
+
+.hebergements-cards .card{
+    flex-basis: calc(33.33% - 22px); /* Je soustrais à chaque carte le gap de 33px, qui se répète 2 fois (33 * 2 = 66 ; 66 / 3 = 22px). */
+    box-sizing: border-box;
+}
+
+.hebergements-cards img{
+    width: 100%;
+    height: 124px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.hebergements-cards .card-content{
+    padding-left: 8px
+}
+
+.hebergements-cards .card-title {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+  
+.hebergements-cards .card-subtitle {
+    margin-top: 0;
+    margin-bottom: 2px;
+}
+  
+.hebergements-cards .card-rating {
+    margin-bottom: 4px;
+}
+
 /****** Populaires ***********/
 .populaires {
     width: 32%;
@@ -366,5 +403,36 @@ a {
     .filter button {
         width: 100%;
         font: 14px;
+    }
+
+    /****** Hebergements And Populaires ***********/
+    .hebergements-and-populaires {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    /****** Populaires ***********/
+
+    .populaires-cards{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .populaires-cards a {
+        width: auto;
+    }
+
+    /****** Hebergements ***********/
+    .hebergements-and-populaires .hebergements {
+        background-color: white;
+
+    }
+
+    .hebergements {
+        width: 100%;
+    }
+
+    .hebergements-cards{
+        flex-direction: column;
     }
 }
