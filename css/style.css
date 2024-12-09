@@ -211,7 +211,7 @@ a {
     }
 
     /****** Headers ***********/
-    .header {
+    .main-container-header {
         flex-direction: column;
         align-items: center;
     }
