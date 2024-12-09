@@ -214,7 +214,7 @@ a {
 
     /****** Activités ***********/
     .activites-cards {
-            flex-direction: column;
+        flex-direction: column;
     }
 
     .activites-cards .card img{
