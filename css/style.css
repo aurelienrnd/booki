@@ -130,6 +130,23 @@ a {
     margin-bottom: 5px;
 }
 
+/****** Footer ***********/
+.main-container-footer{
+    border: black solid 1px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--main-bg-color);
+}
+
+.main-container-footer section {
+    border: red solid 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 15px;
+    padding: 20px;
+}
+
 
 
 
