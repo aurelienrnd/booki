@@ -216,4 +216,8 @@ a {
     .activites-cards {
             flex-direction: column;
     }
+
+    .activites-cards .card img{
+        height: 141px;
+    }
 }
