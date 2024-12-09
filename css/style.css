@@ -333,6 +333,23 @@ a {
 }
 
 
+/****** Footer ***********/
+.main-container-footer{
+    border: black solid 1px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--main-bg-color);
+}
+
+.main-container-footer section {
+    border: red solid 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 15px;
+    padding: 20px;
+}
+
 
 
 
@@ -474,5 +491,10 @@ a {
     /****** Activités ***********/
     .activites-cards {
             flex-direction: column;
+    }
+
+    /****** Footer ***********/
+    .main-container-footer{
+    flex-direction: column;
     }
 }
