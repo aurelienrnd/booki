@@ -209,4 +209,25 @@ a {
     .main-container {
         padding: 0;
     }
+
+    /****** Headers ***********/
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-header {
+        width: 100%;
+        justify-content: space-around;
+    }
+          
+    .lien-nav {
+        padding-top: 0;
+        padding-bottom: 15px;
+    }
+
+    .lien-nav:hover {
+        border-top: none;
+        border-bottom: solid 2px var(--main-color);
+    }
 }
