@@ -196,6 +196,6 @@ a {
 
     /****** Footer ***********/
     .main-container-footer{
-    flex-direction: column;
+        flex-direction: column;
     }
 }
