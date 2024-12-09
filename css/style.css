@@ -213,4 +213,35 @@ a {
     .main-container {
         padding: 0;
     }
+
+    /****** Hebergements And Populaires ***********/
+    .hebergements-and-populaires {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    /****** Populaires ***********/
+
+    .populaires-cards{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .populaires-cards a {
+        width: auto;
+    }
+
+    /****** Hebergements ***********/
+    .hebergements-and-populaires .hebergements {
+        background-color: white;
+
+    }
+
+    .hebergements {
+        width: 100%;
+    }
+
+    .hebergements-cards{
+        flex-direction: column;
+    }
 }
