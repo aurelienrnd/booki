@@ -141,6 +141,7 @@ a {
 .main-container-footer section {
     border: red solid 1px;
     display: flex;
+    width: 33.33%;
     flex-direction: column;
     justify-content: flex-start;
     gap: 15px;
@@ -197,5 +198,9 @@ a {
     /****** Footer ***********/
     .main-container-footer{
         flex-direction: column;
+    }
+
+    .main-container-footer section {
+        width: 100%;
     }
 }
