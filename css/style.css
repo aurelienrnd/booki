@@ -222,6 +222,10 @@ a {
 
     /****** Populaires ***********/
 
+    .populaires {
+        margin-top: 0;
+    }
+
     .populaires-cards{
         display: flex;
         flex-direction: column;
