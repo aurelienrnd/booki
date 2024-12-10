@@ -20,31 +20,35 @@
         <main>
             <section class="search-filter">              
                 <h1 class="section-title">Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p>En plein centre-ville ou en pleine nature</p>       
+                <p>En plein centre-ville ou en pleine nature</p>
                 <form class="search-bar">
                     <label for="where">
-                        <i class="fa-solid fa-location-dot" aria-hidden="true">
-                        <!-- aria-hidden="true" pour l'exclure des lecteurs d'écran --></i>
+                        <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                        <!-- aria-hidden pour ne pas être lue par les technologie d'assistance -->
+                        <span class="sr-only">Trouver un hébergement</span>
+                        <!-- <span class="sr-only"> être lue par les technologie d'assistance sans etre afficher -->
                     </label>
-                    <input type=text placeholder="Rechercher" id="where" class="input-search" aria-label="Rechercher" value="Marseille, France">
-                    <!-- aria-label="Rechercher" pour inclure un label dans les lecteurs d'écran -->
-                    <button class="button-search" type="submit"><span class="texte-btn-search">Rechercher</span><i class="fa-solid fa-magnifying-glass"></i></button>
-                </form>       
+                    <input type=text placeholder="Rechercher" id="where" class="input-search" value="Marseille, France">
+                    <button class="button-search" type="submit" aria-label="Rechercher"><!-- aria-label pour Remplacer le texte qui n'est pas afficher en mode desktop -->
+                        <span class="texte-btn-search">Rechercher</span>
+                        <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                    </button>
+                </form>
                 <div class="filter">
                     <span class="title-area">Filtres</span>
                     <div class="filters-container">
                         <div class="filters-row">
-                            <button class="filter-button"><i class="fa-solid fa-money-bill-wave"></i>Economique</button>
-                            <button class="filter-button"><i class="fa-solid fa-person"></i>Famillial</button>
+                            <button class="filter-button"><i class="fa-solid fa-money-bill-wave" aria-hidden="true"></i>Economique</button>
+                            <button class="filter-button"><i class="fa-solid fa-person" aria-hidden="true"></i>Famillial</button>
                         </div>
                         <div class="filters-row">
-                            <button class="filter-button"><i class="fa-solid fa-heart"></i>Romantique</button>
-                            <button class="filter-button"><i class="fa-sharp fa-solid fa-fire"></i>Nos pépites</button>
+                            <button class="filter-button"><i class="fa-solid fa-heart" aria-hidden="true"></i>Romantique</button>
+                            <button class="filter-button"><i class="fa-sharp fa-solid fa-fire" aria-hidden="true"></i>Nos pépites</button>
                         </div>
                     </div>
                 </div>        
                 <div class="info-search-and-filter">
-                    <i class="fa-solid fa-info" ></i>
+                    <i class="fa-solid fa-info" aria-hidden="true"></i>
                     <span>Plus de 5000 logements sont disponibles dans cette ville</span>
                 </div>
             </section>
