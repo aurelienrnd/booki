@@ -69,28 +69,24 @@ a {
 
 /****** Headers ***********/
 .main-container-header {
-    border: black solid 1px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
 }
   
 .logo {
-    border: red solid 1px;
     width: 61.09px;
     height: 19px;
     padding: 30px 0px 30px 0px;
 }
   
 .nav-header {
-    border: red solid 1px;
     display: flex;
     align-items: start;
     gap: 68px
 }
   
 .lien-nav {
-    border: blue solid 1px;
     padding-top: 16px;
 }
   
@@ -102,7 +98,6 @@ a {
 
 /****** search-and-filter ***********/
 .search-filter {
-    border: black solid 1px;
 }
 
 /*search*/
@@ -150,20 +145,17 @@ a {
 
 /*filter*/
 .filter {
-    border: red solid 1px;
     display: flex;
     align-items: center;
     gap: 15px;
 }
   
 .filters-container {
-    border: green solid 1px;
     display: flex;
     gap: 15px;
 }
 
 .filters-row{
-    border: blue solid 1px;
     display: flex;
     gap: 15px;
 }
@@ -186,7 +178,6 @@ a {
   
 /*info-search-and-filter*/
 .info-search-and-filter {
-    border: red solid 1px;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -303,19 +294,16 @@ a {
 
 /****** Activités ***********/
 .activites {
-    border: black solid 1px;
     padding: 30px;
     margin: 35px 0px;
 }
 
 .activites-cards {
-    border: red solid 1px;
     display: flex;
     gap: 30px
 }
 
 .activites-cards .card {
-    border: green solid 1px;
     flex-basis: 25%;
     padding: 0; /* Pour suprimer le padding qui ce trouve sur la classe general .card */
 }
@@ -332,14 +320,12 @@ a {
 
 /****** Footer ***********/
 .main-container-footer{
-    border: black solid 1px;
     display: flex;
     justify-content: space-between;
     background-color: var(--main-bg-color);
 }
 
 .footer-section {
-    border: red solid 1px;
     display: flex;
     flex-basis: 33.33%;
     flex-direction: column;
