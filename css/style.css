@@ -196,4 +196,9 @@ a {
     .main-container {
         padding: 0;
     }
+    
+    /****** Footer ***********/
+    .main-container-footer{
+        flex-direction: column;
+    }
 }
