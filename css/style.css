@@ -311,7 +311,8 @@ a {
 .activites-cards {
     border: red solid 1px;
     display: flex;
-    gap: 30px
+    gap: 30px;
+    margin-top: 30px;
 }
 
 .activites-cards .card {
