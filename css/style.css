@@ -212,4 +212,27 @@ a {
     .main-container {
         padding: 0;
     }
+
+    /****** Headers ***********/
+    .main-container-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-header {
+        width: 100%;
+        gap: 0;
+    }
+          
+    .lien-nav {
+        padding-top: 0;
+        padding-bottom: 15px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .lien-nav:hover {
+        border-top: none;
+        border-bottom: solid 2px var(--main-color);
+    }
 }
