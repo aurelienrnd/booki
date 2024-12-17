@@ -183,7 +183,12 @@ a {
 }
   
 .fa-solid.fa-info{
-    padding: 7px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+
     font-size: 10px;
     border: var(--filter-border-color) 1px solid;
     border-radius: 200px;
@@ -216,7 +221,7 @@ a {
 }
 
 .hebergements-cards .card{
-    flex-basis: calc(33.33% - 20px); /* Je soustrais à chaque carte le gap de 30px, qui se répète 2 fois (33 * 2 = 60 ; 66 / 3 = 20px). */
+    flex-basis: calc(33.33% - 20px); /* Je soustrais à chaque carte le gap de 30px, qui se répète 2 fois (33 * 2 = 60 ; 60 / 3 = 20px). */
     box-sizing: border-box;
 }
 
