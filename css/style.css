@@ -60,7 +60,7 @@ a {
     color: var(--main-bg-color)
 }
 
-/* Création d'une nouvelle classe que je peux réutiliser dans plusieurs sections */
+/* Création d'une nouvelle classe que je peux réutiliser dans plusieurs sections, comment utiliser sur le figma */ */
 .title-area {
     font-size: 18px;
     font-weight: 700;
