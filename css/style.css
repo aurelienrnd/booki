@@ -7,7 +7,7 @@
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
-    --filter-border-color: #D9D9D9; /* Ajout d'une nouvelle couleur réutilisable pour certain border de la section filter */
+    --border-color: #D9D9D9; /* Ajout d'une nouvelle couleur réutilisable pour certain border de la section filter, comment utiliser sur le figma */
 }
 
 .fa-solid {
@@ -17,7 +17,7 @@
 body {
     display: flex;
     justify-content: center;
-    margin: 0; /* Pour afficher la bordure top des valise <a> dans le <nav> tout en haut de la page */
+    margin: 0; /* Pour afficher la bordure top des balises <a> dans le <nav> tout en haut de la page */
 }
 
 .main-container {
@@ -165,7 +165,7 @@ a {
     gap: 10px;
     padding: 14px 19px;
     border-radius: 25px;
-    border: 2px solid var(--filter-border-color);
+    border: 2px solid var(--border-color);
     background-color: white;
     font-size: 16px;
     font-weight: 700;
@@ -190,7 +190,7 @@ a {
     width: 24px;
     height: 24px;
     font-size: 10px;
-    border: var(--filter-border-color) 1px solid;
+    border: var(--border-color) 1px solid;
     border-radius: 200px;
 }
 
@@ -393,7 +393,7 @@ a {
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
     /****** General ***********/
     .main-container {
         padding: 0;
