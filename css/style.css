@@ -60,7 +60,7 @@ a {
     color: var(--main-bg-color)
 }
 
-/* Création d'une nouvelle classe que je peux réutiliser dans plusieurs sections, comment utiliser sur le figma */ */
+/* Création d'une nouvelle classe que je peux réutiliser dans plusieurs sections, comment utiliser sur le figma */
 .title-area {
     font-size: 18px;
     font-weight: 700;
@@ -468,7 +468,7 @@ a {
     /****** Hebergements And Populaires ***********/
     .hebergements-and-populaires {
         flex-direction: column-reverse;
-        gap: 30;
+        gap: 30px;
     }
 
     .hebergements-and-populaires section {
