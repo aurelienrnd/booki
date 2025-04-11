@@ -3,7 +3,7 @@
 Intégration d’une interface responsive pour une plateforme de réservation
 
 - intégrer l’ensemble du contenu en HTML et CSS
-- Rendu responsive sur différents écrans
+- Responsive sur différents écrans
 - Minimum d’accessibilité (balises ARIA, textes sr-only)
 
 ## Technologies utilisées
